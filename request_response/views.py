@@ -46,7 +46,19 @@ class JSONParamView(View):
         return http.HttpResponse('非标单类型请求体参数，%s--%s'%(username,password))
 
 
+class URLParamView(View):
+    """测试path()提取普通路径参数：
+    http://127.0.0.1:8000/url_param1/18/
+    """
 
+    def get(self,request,age):
+        """
+        :param request:
+        :param age: 路由提取的关键词参数
+        :return:
+        """
+
+        return http.HttpResponse('测试path()提取普通路径参数：%s'%age)
 
 
 
