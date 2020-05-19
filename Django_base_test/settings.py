@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'users', # 用户子模块
+    'request_response', # 测试请求和响应内容
+    'booktest', # 图书英雄
 ]
 
 MIDDLEWARE = [
