@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d8975ca-4c56-4db7-b223-3a77c32c06f8" name="Default Changelist" comment="">
+    <list default="true" id="0d8975ca-4c56-4db7-b223-3a77c32c06f8" name="Default Changelist" comment="模型之模型类迁移建表---定义模型类">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktest/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktest/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktest/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktest/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktest/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktest/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/booktest/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,20 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/booktest/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+            <state relative-caret-position="238">
+              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Django_base_test/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+            <state relative-caret-position="243">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -87,9 +80,9 @@
         <option value="$PROJECT_DIR$/converters.py" />
         <option value="$PROJECT_DIR$/Django_base_test/urls.py" />
         <option value="$PROJECT_DIR$/request_response/views.py" />
-        <option value="$PROJECT_DIR$/Django_base_test/settings.py" />
         <option value="$PROJECT_DIR$/request_response/urls.py" />
         <option value="$PROJECT_DIR$/booktest/models.py" />
+        <option value="$PROJECT_DIR$/Django_base_test/settings.py" />
       </list>
     </option>
   </component>
@@ -117,6 +110,11 @@
               <item name="Django_base_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="Django_base_test" type="462c0819:PsiDirectoryNode" />
               <item name="booktest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Django_base_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Django_base_test" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_base_test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,7 +220,7 @@
       <workItem from="1589763402158" duration="1405000" />
       <workItem from="1589813052774" duration="12140000" />
       <workItem from="1589925064070" duration="771000" />
-      <workItem from="1589926078148" duration="431000" />
+      <workItem from="1589926078148" duration="775000" />
     </task>
     <task id="LOCAL-00001" summary="提取查询字符串数据---GET">
       <created>1589910572361</created>
@@ -322,11 +320,25 @@
       <option name="project" value="LOCAL" />
       <updated>1589926104092</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="模型之模型类迁移建表---定义模型类">
+      <created>1589926532324</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589926532324</updated>
+    </task>
+    <task id="LOCAL-00016" summary="模型之模型类迁移建表---定义模型类">
+      <created>1589926571603</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589926571603</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29306000" />
+    <option name="totallyTimeSpent" value="29650000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,10 +364,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286908" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286908" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32729805" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003131" side_tool="true" weight="0.4011142" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49968693" visible="true" weight="0.24930362" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49968693" visible="true" weight="0.5139276" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.41766632" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -419,9 +431,9 @@
     <MESSAGE value="测试重定向，逻辑处理页面用post是要发送请求的。重定向索引是'/index/'不是‘index/’后面的浏览器默认的是拼接。" />
     <MESSAGE value="redirect()重定向 搭配 反向解析。---路由反向解析 是使用路由的别名，动态的解析出该路由中的真实地址---ret_url = reverse('总路由别名:子路由别名')" />
     <MESSAGE value="数据库booktest立项" />
-    <MESSAGE value="模型之模型类迁移建表---定义模型类" />
     <MESSAGE value="模型之模型类迁移建表---定义模型类---修改了response里面的一个re_path" />
-    <option name="LAST_COMMIT_MESSAGE" value="模型之模型类迁移建表---定义模型类---修改了response里面的一个re_path" />
+    <MESSAGE value="模型之模型类迁移建表---定义模型类" />
+    <option name="LAST_COMMIT_MESSAGE" value="模型之模型类迁移建表---定义模型类" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Django_base_test$manage.coverage" NAME="manage Coverage Results" MODIFIED="1589919036409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -515,13 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Django_base_test/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="99" column="6" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/booktest/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -537,8 +542,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/booktest/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        <state relative-caret-position="238">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django_base_test/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
         </state>
       </provider>
     </entry>
