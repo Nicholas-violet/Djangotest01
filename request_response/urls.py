@@ -21,5 +21,9 @@ urlpatterns = [
     path('response1/', views.Response1View.as_view()),
     # 测试HttpResponsehttp://127.0.0.1:8000/json_resp/
     path('json_resp/', views.JSONResponseView.as_view()),
+    # http://127.0.0.1:8000/index/
+    path('index/', views.IndexView.as_view()),
+    # http://127.0.0.1:8000/login_redirect/
+    path('login_redirect/', views.LoginReditectView.as_view()),
 ]
 

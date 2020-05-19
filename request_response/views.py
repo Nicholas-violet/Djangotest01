@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django import http
 from django.views import View
 import json
@@ -119,12 +119,25 @@ class JSONResponseView(View):
         return http.JsonResponse(dict_data)
 
 
+class IndexView(View):
+    """测试重定向首页
+    http://127.0.0.1:8000/index/
+    """
+
+    def get(self,request):
+        return http.HttpResponse('这是一个重定向之后首页')
 
 
+class LoginReditectView(View):
+    """测试重定向转化页面前
+    http://127.0.0.1:8000/login_redirect/
+    """
 
+    def post(self,request):
+        # 假装正在处理登录逻辑处理
+        # 假装登录逻辑处理完成
 
-
-
+        return redirect('/index/')
 
 
 
