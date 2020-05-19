@@ -33,5 +33,8 @@ urlpatterns = [
     path('',include('users.urls')),
 
     # 请求与响应
-    path('',include('request_response.urls'))
+    # path('',include('request_response.urls'))
+    # path('', include(('子路由', '子应用名字'), namespace='总路由别名，可以随便命名')),
+    path('', include(('request_response.urls', 'request_response'), namespace='request_response')),
+
 ]
