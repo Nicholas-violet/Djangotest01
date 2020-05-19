@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,reverse
 from django import http
 from django.views import View
 import json
@@ -137,7 +137,12 @@ class LoginReditectView(View):
         # 假装正在处理登录逻辑处理
         # 假装登录逻辑处理完成
 
-        return redirect('/index/')
+        # 通过用户重定向引导到首页
+        # return redirect('/index/')
+
+        # ret_url = reverse('总路由别名：子路由别名')
+        ret_url = reverse('request_response:index')
+        return redirect(ret_url)
 
 
 

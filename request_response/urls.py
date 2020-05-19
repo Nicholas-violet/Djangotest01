@@ -23,6 +23,8 @@ urlpatterns = [
     path('json_resp/', views.JSONResponseView.as_view()),
     # http://127.0.0.1:8000/index/
     path('index/', views.IndexView.as_view()),
+    # 取别名
+    path('index/', views.IndexView.as_view(), name='index'),
     # http://127.0.0.1:8000/login_redirect/
     path('login_redirect/', views.LoginReditectView.as_view()),
 ]
