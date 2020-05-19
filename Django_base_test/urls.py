@@ -14,7 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path,include,register_converter
+from converters import MobileConverter
+
+# 注册自定义路由转换器
+# register_converter(自定义路由转换器,'别名')
+register_converter(MobileConverter, 'mobile')
 
 urlpatterns = [
     # 自带的后台管理系统的总路由，可以忽略

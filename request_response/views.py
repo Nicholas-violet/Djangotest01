@@ -88,3 +88,43 @@ class URLParam3View(View):
         return http.HttpResponse('测试re_path()提取路径参数：%s' % phonenum)
 
 
+class Response1View(View):
+    """测试HttpResponse
+    http://127.0.0.1:8000/response1/
+    """
+
+    def get(self, request):
+        # 使用HttpResponse构造响应数据
+        # return http.HttpResponse(content='itcast python', status=200)
+        # 可简写
+        # return http.HttpResponse('itcast python')
+
+        # 另外一种写法
+        response = http.HttpResponse('itcast python')
+        return response
+
+
+class JSONResponseView(View):
+    """测试HttpResponse
+    http://127.0.0.1:8000/json_resp/
+    """
+
+    def get(self,request):
+        # 准备相应数据
+        dict_data = {
+            'city':'beijing',
+            'subject':'python'
+        }
+        # 使用JsonResponse构造并返回json数据
+        return http.JsonResponse(dict_data)
+
+
+
+
+
+
+
+
+
+
+
