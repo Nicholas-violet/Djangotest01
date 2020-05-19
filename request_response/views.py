@@ -61,6 +61,30 @@ class URLParamView(View):
         return http.HttpResponse('测试path()提取普通路径参数：%s'%age)
 
 
+class URLParam2View(View):
+    """测试path()提取普通路径参数：
+        http://127.0.0.1:8000/url_param1/18388882222/
+    """
 
+    def get(self,request,phonenum):
+        """
+        :param request:
+        :param phonenum: 路由提取的关键词参数
+        :return:
+        """
+
+        return http.HttpResponse('测试path()提取普通路径参数：%s'%phonenum)
+
+
+class URLParam3View(View):
+    """测试re_path()提取路径参数
+    http://127.0.0.1:8000/url_param3/18500001111/
+    """
+
+    def get(self, request, phonenum):
+        """
+        :param phonenum: 路由提取的关键字参数
+        """
+        return http.HttpResponse('测试re_path()提取路径参数：%s' % phonenum)
 
 
