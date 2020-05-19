@@ -1,6 +1,6 @@
 from django.views import View
 from django import http
-from django.urls import path,include
+from django.urls import path,include,re_path
 from . import views
 
 
@@ -16,7 +16,7 @@ urlpatterns = [
     #测试path()提取普通路径参数：http://127.0.0.1:8000/url_param1/18388882222/
     path('url_param1/<mobile:phonenum>/', views.URLParam2View.as_view()),
     #测试path()提取普通路径参数：http://127.0.0.1:8000/url_param1/18388882222/
-    path(r'^url_param1/(?P<phonenum>1[3-9]\d{9})/$', views.URLParam3View.as_view()),
+    re_path(r'^url_param1/(?P<phonenum>1[3-9]\d{9})/$', views.URLParam3View.as_view()),
     # 测试HttpResponsehttp://127.0.0.1:8000/response1/
     path('response1/', views.Response1View.as_view()),
     # 测试HttpResponsehttp://127.0.0.1:8000/json_resp/
